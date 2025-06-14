@@ -1,0 +1,272 @@
+/* CKEditor5 Styles */
+
+.ck-content ul,
+.ck-content ol {
+  list-style-type: initial;
+  list-style-position: outside;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+.ck-content li {
+  margin-left: 0;
+}
+
+.dark {
+  /* -- CKEditor color variables for dark mode, mapped from ShadCN themes -- */
+
+  --ck-color-base-foreground: hsl(var(--foreground));
+  --ck-color-base-background: hsl(var(--background));
+  --ck-color-base-border: hsl(var(--border));
+  --ck-color-base-action: hsl(var(--primary));
+  --ck-color-base-focus: hsl(var(--ring));
+  --ck-color-base-text: hsl(var(--foreground));
+  --ck-color-base-active: hsl(var(--primary));
+  --ck-color-base-active-focus: hsl(var(--primary));
+  --ck-color-base-error: hsl(var(--destructive));
+
+  /* -- Generic colors ------------------------------------------------------------------------ */
+
+  --ck-color-focus-border-coordinates: 0, 0%, 83.1%; /* Derived from --ring */
+  --ck-color-focus-border: hsl(var(--ck-color-focus-border-coordinates));
+  --ck-color-focus-outer-shadow: hsla(
+    var(--ring),
+    0.3
+  ); /* Transparent version of ring */
+  --ck-color-focus-disabled-shadow: hsla(var(--muted-foreground), 0.3);
+  --ck-color-focus-error-shadow: hsla(var(--destructive), 0.3);
+  --ck-color-text: var(--ck-color-base-text);
+  --ck-color-shadow-drop: hsla(0, 0%, 0%, 0.5); /* Darker shadow */
+  --ck-color-shadow-drop-active: hsla(0, 0%, 0%, 0.7); /* Darker shadow */
+  --ck-color-shadow-inner: hsla(0, 0%, 0%, 0.4); /* Darker shadow */
+
+  /* -- Buttons ------------------------------------------------------------------------------- */
+
+  --ck-color-button-default-background: transparent;
+  --ck-color-button-default-hover-background: hsl(var(--secondary));
+  --ck-color-button-default-active-background: hsl(var(--secondary));
+  --ck-color-button-default-disabled-background: transparent;
+
+  --ck-color-button-on-background: hsl(var(--accent));
+  --ck-color-button-on-hover-background: hsl(var(--accent)); /* Using accent */
+  --ck-color-button-on-active-background: hsl(var(--accent)); /* Using accent */
+  --ck-color-button-on-disabled-background: hsl(var(--muted));
+  --ck-color-button-on-color: hsl(var(--accent-foreground));
+
+  --ck-color-button-action-background: hsl(var(--primary));
+  --ck-color-button-action-hover-background: hsl(
+    var(--primary)
+  ); /* Using primary */
+  --ck-color-button-action-active-background: hsl(
+    var(--primary)
+  ); /* Using primary */
+  --ck-color-button-action-disabled-background: hsl(var(--muted-foreground));
+  --ck-color-button-action-text: hsl(var(--primary-foreground));
+
+  --ck-color-button-save: hsl(120, 100%, 40%); /* Darker green */
+  --ck-color-button-cancel: hsl(var(--destructive));
+
+  --ck-color-switch-button-off-background: hsl(var(--muted-foreground));
+  --ck-color-switch-button-off-hover-background: hsl(
+    var(--muted-foreground)
+  ); /* Using muted-foreground */
+  --ck-color-switch-button-on-background: hsl(var(--primary));
+  --ck-color-switch-button-on-hover-background: hsl(
+    var(--primary)
+  ); /* Using primary */
+  --ck-color-switch-button-inner-background: hsl(var(--background));
+  --ck-color-switch-button-inner-shadow: hsla(0, 0%, 0%, 0.3);
+
+  /* -- Dropdown ------------------------------------------------------------------------------ */
+
+  --ck-color-dropdown-panel-background: hsl(var(--popover));
+  --ck-color-dropdown-panel-border: hsl(var(--border));
+
+  /* -- Dialog -------------------------------------------------------------------------------- */
+
+  --ck-color-dialog-background: hsl(var(--card));
+  --ck-color-dialog-form-header-border: hsl(var(--border));
+
+  /* -- Input --------------------------------------------------------------------------------- */
+
+  --ck-color-input-background: hsl(var(--input));
+  --ck-color-input-border: hsl(var(--border));
+  --ck-color-input-error-border: hsl(var(--destructive));
+  --ck-color-input-text: hsl(var(--foreground));
+  --ck-color-input-disabled-background: hsl(var(--muted));
+  --ck-color-input-disabled-border: hsl(var(--border));
+  --ck-color-input-disabled-text: hsl(var(--muted-foreground));
+
+  /* -- List ---------------------------------------------------------------------------------- */
+
+  --ck-color-list-background: hsl(var(--popover));
+  --ck-color-list-button-hover-background: hsl(var(--secondary));
+  --ck-color-list-button-on-background: hsl(var(--primary));
+  --ck-color-list-button-on-background-focus: hsl(var(--primary));
+  --ck-color-list-button-on-text: hsl(var(--primary-foreground));
+
+  /* -- Panel ------------------------------------------------------------------------------- */
+
+  --ck-color-panel-background: hsl(var(--card));
+  --ck-color-panel-border: hsl(var(--border));
+
+  /* -- Toolbar ------------------------------------------------------------------------------- */
+
+  --ck-color-toolbar-background: hsl(var(--background));
+  --ck-color-toolbar-border: hsl(var(--border));
+
+  /* -- Tooltip ------------------------------------------------------------------------------- */
+
+  --ck-color-tooltip-background: hsl(var(--foreground));
+  --ck-color-tooltip-text: hsl(var(--background));
+
+  /* -- Engine -------------------------------------------------------------------------------- */
+
+  --ck-color-engine-placeholder-text: hsl(var(--muted-foreground));
+
+  /* -- Upload -------------------------------------------------------------------------------- */
+
+  --ck-color-upload-bar-background: hsl(var(--ring));
+
+  /* -- Link -------------------------------------------------------------------------------- */
+
+  --ck-color-link-default: hsl(210, 100%, 60%); /* Vibrant blue for links */
+  --ck-color-link-selected-background: hsla(var(--primary), 0.1);
+  --ck-color-link-fake-selection: hsla(var(--primary), 0.3);
+
+  /* -- Search result highlight ---------------------------------------------------------------- */
+
+  --ck-color-highlight-background: hsl(
+    40,
+    100%,
+    50%
+  ); /* Dark-mode friendly yellow */
+
+  /* -- Generic colors ------------------------------------------------------------------------- */
+
+  --ck-color-light-red: hsl(0, 100%, 20%); /* Darker red */
+}
+
+.ck-fullscreen__main-wrapper .ck-fullscreen__editable {
+  margin-top: var(--ck-fullscreen-editor-top-margin);
+  height: 100%;
+  margin-left: 0 !important;
+}
+
+.dark.ck-fullscreen {
+  /* This targets the entire fullscreen overlay/background */
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.dark.ck-fullscreen body {
+  /* Ensure the body's background in fullscreen is also dark */
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+.ck-fullscreen__main-wrapper .ck-fullscreen__editable-wrapper {
+  justify-content: center !important;
+}
+
+/* Target CKEditor's main elements when the body is in dark fullscreen */
+.dark.ck-fullscreen .ck.ck-editor__main .ck-editor__editable {
+  /* The editable content area */
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+  display: flex;
+  justify-content: center;
+}
+
+.dark.ck-fullscreen .ck.ck-toolbar,
+.dark.ck-fullscreen .ck.ck-dropdown__panel,
+.dark.ck-fullscreen .ck.ck-balloon-panel,
+.dark.ck-fullscreen .ck.ck-editor {
+  /* Toolbars, dropdowns, floating panels, and the main editor container */
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+  border-color: hsl(var(--border)) !important;
+}
+
+/* More specific override for the inline editor in fullscreen */
+.dark.ck-fullscreen
+  .ck.ck-reset_all.ck-editor__editable_inline.ck-editor__editable_inline_fullscreen {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+/* You might need to add this if specific elements remain white,
+   e.g., table cells or specific blockquotes in the content */
+.dark .ck-content {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.dark.ck-fullscreen .ck-content {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+}
+
+/* NEW: Styles for the specific fullscreen elements you provided */
+
+.ck-menu-bar,
+.dark.ck-fullscreen .ck.ck-fullscreen__menu-bar,
+.dark.ck-fullscreen .ck.ck-fullscreen__toolbar,
+.dark.ck-fullscreen .ck.ck-fullscreen__bottom-wrapper,
+.dark.ck-fullscreen .ck.ck-fullscreen__sidebar {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
+  border-color: hsl(
+    var(--border)
+  ) !important; /* Add border for consistency if they have borders */
+}
+
+.dark.ck-fullscreen .ck.ck-fullscreen__editable-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(var(--background)) !important;
+  /* The editable-wrapper itself might not need text color, as the content inside it handles it */
+  border-color: hsl(var(--border)) !important;
+}
+
+/* Specific sidebar overrides if needed */
+.ck-fullscreen .ck.ck-fullscreen__left-sidebar,
+.ck-fullscreen .ck.ck-fullscreen__right-sidebar {
+  background-color: hsl(
+    var(--sidebar-background)
+  ) !important; /* Use sidebar background if different */
+  color: hsl(
+    var(--sidebar-foreground)
+  ) !important; /* Use sidebar foreground if different */
+  border-color: hsl(var(--sidebar-border)) !important;
+  display: none;
+}
+
+/* Ensure buttons and other interactive elements within these fullscreen wrappers also follow dark mode */
+.dark.ck-fullscreen .ck-button {
+  color: hsl(var(--foreground)) !important;
+  background-color: transparent !important;
+}
+
+.dark.ck-fullscreen .ck-button:hover:not(.ck-button_disabled),
+.dark.ck-fullscreen .ck-button.ck-on:hover:not(.ck-button_disabled) {
+  background-color: hsl(var(--secondary)) !important;
+}
+
+.dark.ck-fullscreen .ck-button.ck-on {
+  background-color: hsl(var(--accent)) !important;
+  color: hsl(var(--accent-foreground)) !important;
+}
+
+.dark.ck-fullscreen .ck-list__item .ck-button {
+  color: hsl(var(--foreground)) !important;
+}
+
+.dark.ck-fullscreen .ck-list__item .ck-button:hover {
+  background-color: hsl(var(--secondary)) !important;
+}
+
+/* Any other specific overrides for text/icons/borders within these new fullscreen sections */
+.dark.ck-fullscreen .ck-icon {
+  fill: currentColor; /* Ensures icons inherit text color */
+}

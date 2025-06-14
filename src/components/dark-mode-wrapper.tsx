@@ -1,8 +1,11 @@
+import "../styles/dark-mode.css";
+import { ReactNode } from "react";
+
 const CKEditorDarkModeWrapper = ({
   children,
   theme,
 }: {
-  children?: React.ReactNode;
+  children?: ReactNode;
   theme?: string | undefined;
 }) => {
   return <div className={`${theme === "dark" ? "dark" : ""}`}>{children}</div>;
