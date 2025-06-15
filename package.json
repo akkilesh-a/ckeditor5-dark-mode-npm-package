@@ -1,7 +1,7 @@
 {
   "name": "ckeditor5-dark-mode",
   "description": "Dark mode styles for CKEditor5 with shadcn variables",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -46,8 +46,7 @@
     "tslib": "^2.8.1",
     "typescript": "^5.8.3"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
