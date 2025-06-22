@@ -6,7 +6,7 @@ const CKEditorDarkModeWrapper = ({
   theme,
 }: {
   children?: ReactNode;
-  theme?: string | undefined;
+  theme: "dark" | "light";
 }) => {
   return <div className={`${theme === "dark" ? "dark" : ""}`}>{children}</div>;
 };
