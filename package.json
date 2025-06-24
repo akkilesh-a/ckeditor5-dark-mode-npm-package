@@ -1,7 +1,7 @@
 {
   "name": "ckeditor5-dark-mode",
   "description": "Dark mode styles for CKEditor5 with shadcn variables",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
